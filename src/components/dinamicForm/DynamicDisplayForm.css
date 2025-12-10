@@ -1,0 +1,238 @@
+/* Display Form Styles */
+.display-item-dinamic {
+  display: flex;
+  align-items: center;
+  background: var(--color-card);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.display-item-dinamic-grid {
+  align-items: center;
+  background: var(--color-card);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.display-item-dinamic:hover {
+  border-color: var(--color-blue);
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); */
+  transform: translateY(-1px);
+}
+
+.display-label {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--color-text);
+  min-width: 140px;
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
+.display-value {
+  flex: 1;
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  word-break: break-word;
+}
+
+/* Grid Container Styles */
+.grid-container {
+  width: 100%;
+  margin: 0;
+}
+
+.grid-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.grid-item-card {
+  background: var(--color-card);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-border);
+  transition: all 0.3s ease;
+  margin: 0;
+}
+
+.grid-item-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+  border-color: var(--color-blue);
+}
+
+.grid-item-card ion-card-content {
+  padding: 20px;
+  background: var(--color-card);
+}
+
+/* Button Styles */
+/* .button-dinamic {
+  --background: var(--color-blue);
+  --background-hover: var(--color-blue-strong);
+  --color: var(--color-white);
+  --border-radius: 8px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+} */
+
+.button-dinamic:hover {
+  --background: var(--color-blue-strong);
+
+  transform: translateY(-1px);
+}
+
+/* File View Button */
+.display-item-dinamic ion-button[fill="outline"] {
+  --color: var(--color-blue);
+  --border-color: var(--color-blue);
+  --border-radius: 8px;
+  --padding-start: 12px;
+  --padding-end: 12px;
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: none;
+  transition: all 0.3s ease;
+}
+
+.display-item-dinamic ion-button[fill="outline"]:hover {
+  --background: var(--color-blue);
+  --color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+/* Loading and Error States */
+.grid-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  color: var(--color-muted);
+  font-size: 14px;
+}
+
+.grid-loading ion-spinner {
+  margin-bottom: 12px;
+  --color: var(--color-blue);
+}
+
+.grid-error {
+  padding: 20px;
+  text-align: center;
+  color: var(--ion-color-danger);
+  font-size: 14px;
+  background: var(--color-danger-light, rgba(220, 53, 69, 0.1));
+  border-radius: 8px;
+  border: 1px solid var(--color-danger, #dc3545);
+}
+
+.grid-empty {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 14px;
+}
+
+/* Pagination Styles */
+.pagination-container-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid var(--color-border);
+  margin-top: 20px;
+}
+
+.pagination-info {
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination-btn {
+  --padding-start: 8px;
+  --padding-end: 8px;
+  --padding-top: 6px;
+  --padding-bottom: 6px;
+  --border-radius: 6px;
+  font-size: 13px;
+  min-width: 32px;
+  height: 32px;
+  --color: var(--color-text);
+  --background: var(--color-card);
+  --border-color: var(--color-border);
+}
+
+.pagination-btn.active {
+  --background: var(--color-blue);
+  --color: var(--color-white);
+}
+
+.pagination-btn:hover {
+  --background: var(--color-hover);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .display-item-dinamic {
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .display-label {
+    min-width: auto;
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+  
+  .display-value {
+    width: 100%;
+  }
+
+  .pagination-container-grid {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .pagination-controls {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Inherit existing styles for special components */
+.display-item-dinamic .form-item-dinamic {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.display-item-dinamic .button-container {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.display-item-dinamic .fileview-container {
+  width: 100%;
+} 

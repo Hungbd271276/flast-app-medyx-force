@@ -1,0 +1,13 @@
+.ion-delegate-host {
+    width: 100%;
+}
+.ion-home-header_detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+    background-color: var(--color-primary);
+    position: relative;
+    z-index: 1;
+}

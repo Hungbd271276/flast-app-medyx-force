@@ -1,0 +1,8 @@
+{
+  "name": "Flast_QLHS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite",
+  "id": "ba4210b8"
+}

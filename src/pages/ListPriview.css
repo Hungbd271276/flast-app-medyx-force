@@ -1,0 +1,108 @@
+.list_preview_content {
+  position: relative;
+  height: 100%;
+  --background: none;
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/bg_linear.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.background-overlay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 25px;
+}
+
+.infoUser {
+    border-radius: 50%; 
+    overflow: hidden;
+}
+.title_heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 30px;
+}
+
+.list_content {
+    width: 100%;
+    height: auto;
+    background: #EFEFEF !important;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.list_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.lab_items {
+    width: 85%;
+    height: 27px;
+    background: #fff;
+    border: 1px solid #1051CB;
+    border-radius: 50px;
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.list_items_content {
+    padding: 15px 15px;
+}
+.item_child {
+    width: 100%;
+    height: 91px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 16px;
+}
+
+.stroke {
+    width: 37px;
+    height: 37px;
+    border-radius: 50px;
+    background: #C7F6D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user_title > .title  {
+    font-size: 13px;
+    color: #000;
+    font-weight: 600;
+    margin: 0;
+    padding:0;
+}
+
+.user_title > .content  {
+    font-size: 10px;
+    color: #A8A8A8;
+    font-weight: 600;
+    margin: 0;
+    padding:0;
+    margin-top: 5px;    
+}
+
+.arrow {
+    display: flex;
+    justify-content: end;
+}

@@ -1,0 +1,138 @@
+.time-page {
+  padding: 15px;
+  margin-top: 15px;
+  height: 600px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  
+}
+.time-date-booking {
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* căn giữa theo chiều ngang */
+  justify-content: center;
+  width: 100%;
+  margin: 24px 0;
+}
+
+.date-picker-row {
+    display: flex;
+    align-items: center;
+    background: var(--color-card);
+    border-radius: 12px;
+    padding: 4px 8px;
+    box-shadow: 0 -2px 16px rgba(0,0,0,0.08);
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .date-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    font-size: 14px;
+    padding: 10px 8px;
+    border-radius: 12px;
+  }
+  
+  .date-btn {
+    /* background: #2563eb; */
+    color: var(--color-white);
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-left: 4px;
+    transition: background 0.2s;
+  }
+  .custom-date-modal {
+    background: var(--color-card);
+    border-radius: 16px;
+    padding: 16px;
+    min-width: 320px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* căn giữa theo chiều ngang */
+    position: relative;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+    min-height: 40px; /* đảm bảo đủ cao cho nút đóng */
+  }
+  
+  .modal-header span {
+    flex: 1;
+    text-align: center;
+    pointer-events: none; /* để nút X không bị che */
+  }
+
+  .info-hours-booking {
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* căn giữa theo chiều ngang */
+  justify-content: center;
+  width: 100%;
+  margin: 24px 5px;
+  }
+
+  .hour-grid {
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  
+  .hour-slot {
+    min-width: 110px;
+    flex: 1 1 140px;
+    padding: 16px 0;
+    background: var(--color-card);
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1.5px solid var(--color-border);
+    box-shadow: 0 0 0 transparent;
+    transition: box-shadow 0.2s, border 0.2s, background 0.2s, color 0.2s;
+  }
+  
+  .hour-slot.selected {
+    border: 2px solid var(--color-primary);
+    background: var(--color-blue-light);
+    color: var(--color-primary);
+    font-weight: 600;
+    box-shadow: 0 4px 16px rgba(38, 94, 222, 0.12);
+  }
+  
+  
+  .session-block {
+    margin-bottom: 20px;
+  }
+
+  .hour-slot.empty {
+    background: transparent;
+    border: none;
+    pointer-events: none;
+  }
+  
+  
+
+  
+  
+  
+  
+  
